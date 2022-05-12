@@ -1,0 +1,714 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+   }
+
+.container1{
+    display: flex;
+    flex-wrap: nowrap;
+    background-image: url("bilder/911.jpg");
+    height: 110vh;
+    background-size: cover;
+    justify-content: space-around;
+    position: relative;
+}
+
+.logo img{
+    margin-top: -3rem;
+}
+
+.navbar{
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+.navbar a{
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+    font-size: 20px;
+    text-decoration: none;
+    color: #474747;
+    position: relative;
+    color: white;
+}
+
+.navbar a::after{
+    width: 0rem;
+    height: 2px;
+    background-color: #000;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 2rem;
+    transition: 0.35s ease;
+}
+
+.navbar a:hover::after{
+    background-color: #53CEC2;
+    width: 10rem;
+}
+
+.login{
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+.login a{
+    margin: 0.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px solid #53CEC2;
+    transition: 0.5s ease;
+}
+
+.sign {
+    color: #fff;
+}
+
+.logga {
+    color: #fff;
+}
+
+.logga:hover{
+    background-color: #53CEC2;
+    color: white;
+}
+
+.sign:hover{
+    background-color: #53CEC2;
+    color: white;
+}
+
+.phrase{
+  font-size: 4rem;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-45%, -90%);
+  width: 80%;
+  color: #53CEC2;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.porsche img{
+  height: 10%;
+  width: 10%
+
+}
+
+.container2{
+    background-color: #fff;
+    color: #474747;
+    position: relative;
+    z-index: -3;
+}
+
+.container2 .overlay{
+    position: absolute;
+    top: 0;
+    right: 6rem;
+    width: 40rem;
+    height: 55rem;
+    background-color: red;
+    z-index: -1;
+    background: linear-gradient(rgba(83, 206, 194, .7), rgba(84, 207, 194,.1));
+    border-radius: 3rem;
+}
+
+.container2 h1{
+    margin: 10rem;
+    margin-top: 7rem;
+    font-size: 90px;
+    max-width: 45rem;
+    position: relative;
+    z-index: -1;
+    margin-left: 5.5rem;
+}
+
+.colorbox{
+
+}
+
+.colorbox img{
+    float: right;
+    width: 50rem;
+    object-fit: contain;
+    height: 35rem;
+    margin-top: -22rem;
+    margin-right: 3rem;
+}
+
+.undertext{
+    margin-left: 5.5rem;
+    font-size: 36px;
+}
+
+.undertext img{
+    width: 30%;
+}
+
+.group-icon{
+    background-color: #fff;
+    width: 60rem;
+    height: 11rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    border: .1rem solid #f0f0f0;
+    border-radius: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.item{
+    background-color: #fff;
+    width: 14rem;
+    margin: -0.2rem;
+    height: 10rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    line-height: 10rem;
+    font-size: 3rem;
+    color: #000;
+    border: .1rem solid #f0f0f0;
+    transition: 0.4s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.searchbox .group-icon .item.active{
+    background-color: #53CEC2;
+    color: white;
+}
+
+.searchbox{
+    margin-top: 12rem;
+    margin-left: 5.5rem;
+    max-width: 20%;
+}
+
+.form {
+    background-color: #fff;
+    width: 45rem;
+    height: 5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+}
+
+.form a{
+    text-decoration: none;
+}
+
+input {
+    all: unset;
+    color: #000;
+    border: 1px solid rgb(175, 175, 175);
+    width: 100%;
+}
+
+input::placeholder {
+    color: #000;
+    opacity: 0.7;
+    font-size: 1rem;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+.container4 select{
+    border: none;
+    font-size: 1rem;
+    margin-left: -1rem;
+}
+
+svg {
+    color: #000;
+    fill: currentColor;
+    text-align: right;
+    transition: 0.5s ease;
+    padding: 0rem 3rem;
+}
+
+.container3{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+.container3 label{
+    margin-bottom: 0.3rem;
+    font-weight: 400;
+}
+
+.container4 i{
+    font-size: 1rem; 
+    margin: 0 1.5rem;
+}
+
+.container4{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.location{
+    margin: 0 1rem;
+
+}
+
+.container3 input{
+    font-size: 1rem;
+    margin: 0 1.1rem;
+}
+
+button{
+    background-color:rgba(83, 206, 194, .7);
+    font-size: 1.5rem;
+    width: 8.5%;
+    padding: .5rem 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin-right: -2rem;
+    color: #fff;
+}
+
+@media(max-width:768px){
+    .container1{
+        width: 140vw;
+        background-size: 105% 72%;
+        background-repeat: no-repeat;
+    }
+    .navbar a{
+        font-size: 0.9rem;
+        padding: 0.5rem 2.5rem;
+    }
+    .logo img{
+        width: 100px;
+        margin-top: .1rem;
+    }
+    .container1 h1{
+        font-size: 6rem;
+        margin-bottom: 7rem;
+    }
+    .login a{
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border-radius: .8rem;
+    }
+    .colorbox img{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        margin-left: 100rem;
+    }
+    .container2{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.box{
+    display: grid;
+}
+
+.panel{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 25%;  
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3rem;
+}
+
+
+thead{
+    background-color: #e7e7e7;
+}
+
+  td, th {
+    border: 1px solid #e7e7e7;
+    text-align: left;
+    padding: 8px;
+}
+
+.table h1{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.yourCar-box{
+    font-weight: 600;
+    font-size: 24px;
+    color: #474747;
+}
+
+
+.yourCar .yourCar-container{
+    display: block;
+    margin-top: 5rem;
+    padding: 5rem;
+}
+  .yourCar .yourCar-container .yourCar-box{
+    background-color: white;
+    box-shadow: 0 .1rem .5rem rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+  }
+  
+  .yourCar .yourCar-container .yourCar-box h1{
+    font-size: 2.5rem;
+    color: #575757;
+  }
+  
+  .yourCar .yourCar-container .yourCar-box p{
+    font-size: 1.3rem;
+    color: #929292;
+  }
+  
+  .yourCar .yourCar-container .yourCar-box i{
+    width: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    border-radius: 50%;
+    /* background-color: hsl(331, 81%, 94%); */
+    font-size: 2rem;
+  }
+  
+  .yourCar .yourCar-container select{
+    background-color: white;
+    box-shadow: 0 .1rem .5rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 5rem;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #7e7e7e;
+  }
+  
+  .yourCar .book-button{
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+  }
+
+.CarName{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+}
+
+.button{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    background-color: #53CEC2;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    column-gap: 20px;
+}
+
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 24px;
+    text-align: left;
+    color:rgba(83, 206, 194, .7);
+    font-family: 'Montserrat';
+    border-radius: 1rem;
+}
+
+input{
+    /* font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center; */
+
+}
+
+.panel-container{
+    text-align: center;
+    width:  50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+}
+
+.panel2{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size: 24px;
+    padding: 3rem;
+    border-radius: 1rem;
+
+}
+
+.panel2 a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.undertext2{
+    margin-top: 2rem;
+    margin: 3rem;
+}
+
+.mottFLEX{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+    gap: 1.5rem;
+}
+
+.motUI{
+    box-shadow: 0 .1rem .5rem rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.motUI p{
+    margin: 10px;
+}
+
+.table1{
+    margin-top: 2rem;
+}
+
+.button2{
+    margin-top: 1rem;
+    background-color:rgba(83, 206, 194, .7);
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin-right: -2rem;
+    color: #fff;
+}
+
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+span{
+    color:rgba(83, 206, 194, .7);
+}
+
+.container5{    
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.info{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.info2{
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.info2 p{
+    margin-top: 1rem;
+}
+
+.container5{
+    margin-top: 5rem;
+}
+
+.container5 img{
+    float: right;
+    width: 150px;
+    margin-top: -2rem;
+}
+
+.info3 {
+    float: right;
+    position: relative;
+    margin-top: -26rem;
+    margin-right: 5rem;
+
+}
+
+.info3 p{
+    margin-top: 1rem;
+}
+
+.reciept{
+    background-color: #53CEC2;
+    padding: 1rem;
+    font-size: 18px;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+    margin-top: 2rem;
+}
+
+.adminlog{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 4rem;
+    text-align: center;
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+    margin-top: 3rem;
+}
+
+.adminlog a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 1rem;
+    border: 1px solid #53CEC2;
+    display: block;
+    transition: .5s
+}
+
+.adminlog a:hover{
+    background-color: #53CEC2;
+    color: white;
+}
+
+.adminlog p{
+    padding: 1.5rem;
+}
+
+/* .num {
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.main{
+    display: grid;
+    grid-template-rows: auto auto auto 50px 50px;
+    grid-template-columns: auto auto auto;
+    background-color: gray;
+    padding: 5px;
+} */
+
+.container6{    
+    display: grid;
+    gap: 2rem;
+    border-radius: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 2rem;
+}
+
+form.test {
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    box-shadow: rgba(100, 100, 100, 0.2) 0px 7px 29px 0px;  
+}
+
+
+form.test .button2{
+width: 50%;
+margin: 1rem;
+}
+
+.container7 section{
+    display: grid;
+}
+
+.motUI2{
+    box-shadow: 0 .1rem .5rem rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.motUI2 p{
+    margin: 10px;
+}
+
+.button3{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color:rgba(83, 206, 194, .7);
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin-right: -2rem;
+    color: #fff;
+    margin-right: 1rem;
+    margin-top: -2px;
+}
+
+.allusers h2{
+    text-align: center;
+}
+
+.container7 h1{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    text-decoration: underline;
+}
+
+.chart{
+    width:40%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+h2{
+    text-align: center;
+    margin-top: 4rem;
+}
